@@ -1,9 +1,19 @@
 {
   "scripts": {
-    "demo": "ts-node hello.ts"
+    "demo": "webpack-dev-server --config-register ts-node/register --open"
   },
   "devDependencies": {
-    "ts-node": "7.0.1",
-    "typescript": "3.2.2"
+    "@types/html-webpack-plugin": "3.2.0",
+    "@types/node": "10.12.21",
+    "html-webpack-plugin": "3.2.0",
+    "ts-loader": "5.3.3",
+    "ts-node": "8.0.2",
+    "typescript": "3.2.2",
+    "webpack": "4.29.1",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.1.14"
+  },
+  "dependencies": {
+    "browser-soap": "github:freewind-forks/browser-soap"
   }
 }
